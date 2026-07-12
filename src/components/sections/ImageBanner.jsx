@@ -6,7 +6,7 @@ return(
 
 <img
 
-src="/Images/Banner/banner.jpg"
+src="/Images/Banner/banner.png"
 
 alt="Coffee Farm"
 

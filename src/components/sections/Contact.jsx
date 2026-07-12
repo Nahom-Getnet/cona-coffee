@@ -3,6 +3,39 @@ import { useForm, ValidationError } from "@formspree/react";
 import "../../styles/contact.css";
 function Contact() {
 const [state, handleSubmit] = useForm("mjgnbqkd");
+if (state.succeeded) {
+
+return (
+
+<section id="contact" className="contact-section">
+
+<div className="container">
+
+<div className="contact-header">
+
+<h2>
+
+Thank You!
+
+</h2>
+
+<p>
+
+Your inquiry has been received successfully.
+
+Our team will contact you within 24 hours.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+);
+
+}
 return (
 
 <section id="contact" className="contact-section">
@@ -35,8 +68,7 @@ Tell us about your sourcing needs and we'll connect you with trusted Ethiopian c
 
 <div className="contact-form card">
 
-<form  action="https://formspree.io/f/mjgnbqkd"
-  method="POST">
+<form onSubmit={handleSubmit}>
 
 <input
   type="text"
@@ -47,7 +79,7 @@ Tell us about your sourcing needs and we'll connect you with trusted Ethiopian c
 
 <input
   type="text"
-  name="contact_person"
+  name="contact person"
   placeholder="Contact Person"
   required
 />
@@ -64,6 +96,7 @@ Tell us about your sourcing needs and we'll connect you with trusted Ethiopian c
   name="email"
   placeholder="Email Address"
   required
+  errors={state.errors}
 />
 
 <input
@@ -74,14 +107,14 @@ Tell us about your sourcing needs and we'll connect you with trusted Ethiopian c
 
 <input
   type="text"
-  name="coffee_type"
+  name="coffee type"
   placeholder="Coffee Origin"
   required
 />
 
 <input
   type="text"
-  name="estimated_quantity"
+  name="estimated quantity"
   placeholder="Estimated Order Quantity (e.g. 100 kg or 1 Container)"
   required
 />

@@ -37,7 +37,8 @@ function CoffeePortfolio() {
 
           {coffeeData.map((Coffee) => (
 
-            <motion.div className="card service-card"
+            <motion.div key={coffeeData.name} 
+            className="card service-card"
                         whileHover={{
                         y:-10,
                         scale:1.03
@@ -70,8 +71,12 @@ function CoffeePortfolio() {
                   <strong>Cup Profile:</strong> {Coffee.notes}
                 </p>
 
-                <span  className="availability">
-                  {Coffee.availability}
+                <span
+                 className={`availability ${Coffee.availability
+                   .toLowerCase()
+                   .replace(/\s+/g, "-")}`}
+                >
+                     {Coffee.availability}
                 </span>
 
               </div>
