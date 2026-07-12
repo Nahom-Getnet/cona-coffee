@@ -1,10 +1,10 @@
 import Hero from "../components/sections/Hero";
 import About from "../components/sections/About";
 import CoffeePortfolio from "../components/sections/CoffeePortfolio";
+import ImageBanner from "../components/sections/ImageBanner";
 import Services from "../components/sections/Services";
 import Process from "../components/sections/Process";
-import WhychooseUs from "../components/sections/WhychooseUs";
-import ImageBanner from "../components/sections/ImageBanner";
+import WhyChooseUs from "../components/sections/WhychooseUs";
 import FAQ from "../components/sections/FAQ";
 import Contact from "../components/sections/Contact";
 import Footer from "../components/sections/Footer";
@@ -16,23 +16,14 @@ return(
 <>
 
 <Hero/>
-
 <About/>
-
-<Services/>
-
-<Process/>
-
-<WhyChooseUs/>
-
 <CoffeePortfolio/>
-
 <ImageBanner/>
-
+<Services/>
+<Process/>
+<WhyChooseUs/>
 <FAQ/>
-
 <Contact/>
-
 <Footer/>
 
 </>
