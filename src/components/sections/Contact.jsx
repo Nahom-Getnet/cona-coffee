@@ -1,7 +1,8 @@
 import { Mail, Phone, MapPin, Globe } from "lucide-react";
+import { useForm, ValidationError } from "@formspree/react";
 import "../../styles/contact.css";
 function Contact() {
-
+const [state, handleSubmit] = useForm("mjgnbqkd");
 return (
 
 <section id="contact" className="contact-section">
@@ -34,38 +35,72 @@ Tell us about your sourcing needs and we'll connect you with trusted Ethiopian c
 
 <div className="contact-form card">
 
-<form>
+<form  action="https://formspree.io/f/mjgnbqkd"
+  method="POST">
 
-<input placeholder="Company Name" required/>
+<input
+  type="text"
+  name="company"
+  placeholder="Company Name"
+  required
+/>
 
-<input placeholder="Contact Person" required/>
+<input
+  type="text"
+  name="contact_person"
+  placeholder="Contact Person"
+  required
+/>
 
-<input placeholder="Country" required/>
+<input
+  type="text"
+  name="country"
+  placeholder="Country"
+  required
+/>
 
-<input type="email" placeholder="Email Address" required/>
+<input
+  type="email"
+  name="email"
+  placeholder="Email Address"
+  required
+/>
 
-<input placeholder="Phone / WhatsApp"/>
+<input
+  type="text"
+  name="phone"
+  placeholder="Phone / WhatsApp"
+/>
 
-<input placeholder="Coffee Interest"/>
+<input
+  type="text"
+  name="coffee_type"
+  placeholder="Coffee Origin"
+  required
+/>
 
-<input placeholder="Estimated Quantity"/>
+<input
+  type="text"
+  name="estimated_quantity"
+  placeholder="Estimated Order Quantity (e.g. 100 kg or 1 Container)"
+  required
+/>
 
 <textarea
-
-rows="7"
-
-placeholder="Tell us exactly what you're looking for...">
-
-</textarea>
+  name="message"
+  rows="7"
+  placeholder="Tell us about your requirements, preferred coffee grade, shipment timeline, or any questions you have..."
+  required
+></textarea>
 
 <button
-
-className="btn btn-primary">
-
-Send Inquiry
-
+  type="submit"
+  className="btn btn-primary"
+>
+  Send Inquiry
 </button>
-
+<i> We'll respond within 24 hours.
+    Your information will only be used to respond to your inquiry.</i>
 </form>
 
 </div>
