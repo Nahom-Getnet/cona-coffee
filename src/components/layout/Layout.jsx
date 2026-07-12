@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import Footer from "../sections/Footer";
+
 
 import FloatingWhatsapp from "../common/FloatingWhatsapp";
 import BackToTop from "../common/BackToTop";
@@ -13,7 +13,7 @@ function Layout({ children }) {
         {children}
       </main>
 
-      <Footer />
+      
 
       <FloatingWhatsapp />
       <BackToTop />
