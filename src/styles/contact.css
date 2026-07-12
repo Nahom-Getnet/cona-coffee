@@ -24,7 +24,14 @@ gap:70px;
 align-items:start;
 
 }
+@media (max-width: 900px) {
 
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+}
 .contact-form{
 padding:45px;
 }
@@ -42,6 +49,8 @@ border:1px solid var(--border);
 font-size:1rem;
 background:white;
 transition:.3s;
+box-sizing: border-box;
+width: 100%;
 }
 
 .contact-form input:focus,

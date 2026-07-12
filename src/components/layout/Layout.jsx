@@ -1,23 +1,24 @@
 import Navbar from "./Navbar";
+import Footer from "../sections/Footer";
 
-function Layout({children}){
+import FloatingWhatsapp from "../common/FloatingWhatsapp";
+import BackToTop from "../common/BackToTop";
 
-return(
+function Layout({ children }) {
+  return (
+    <>
+      <Navbar />
 
-<>
+      <main>
+        {children}
+      </main>
 
-<Navbar/>
+      <Footer />
 
-<main>
-
-{children}
-
-</main>
-
-</>
-
-)
-
+      <FloatingWhatsapp />
+      <BackToTop />
+    </>
+  );
 }
 
 export default Layout;

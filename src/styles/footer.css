@@ -23,6 +23,16 @@ font-weight:600;
 
 }
 
+@media (max-width: 900px) {
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+}
+
 .footer-grid p{
 
 color:#ECECEC;
