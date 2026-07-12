@@ -1,18 +1,45 @@
-# React + Vite
+# Coffee Agency Website ☕
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional coffee sourcing website built for an Ethiopian coffee agency that connects international buyers with trusted local exporters.
 
-Currently, two official plugins are available:
+## About The Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This website helps showcase Ethiopian coffee origins, sourcing services, and provides a communication platform for international buyers interested in coffee export opportunities.
 
-## React Compiler
+## Built With
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- React
+- Vite
+- JavaScript
+- CSS
+- Framer Motion
+- Lucide React
 
-Note: This will impact Vite dev & build performances.
+## Features
 
-## Expanding the ESLint configuration
+- Responsive design for desktop and mobile
+- Modern coffee-inspired UI
+- Animated sections and interactions
+- Coffee origin portfolio
+- Services showcase
+- Buyer inquiry/contact section
+- FAQ section
+- Professional business landing page
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+src/
+├── components/
+│ ├── layout/
+│ └── sections/
+├── pages/
+├── styles/
+└── data/
+
+
+## Purpose
+
+Developed as a real-world business website project for a coffee sourcing agency in Ethiopia.
+
+## Author
+
+Nahom Getnet
