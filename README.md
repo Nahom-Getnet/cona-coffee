@@ -78,7 +78,7 @@ This website helps showcase Ethiopian coffee origins, sourcing services, and pro
 - CSS
 - Framer Motion
 - Lucide React
-
+- Formspree
 ## Features
 
 - Responsive design for desktop and mobile
@@ -89,15 +89,6 @@ This website helps showcase Ethiopian coffee origins, sourcing services, and pro
 - Buyer inquiry/contact section
 - FAQ section
 - Professional business landing page
-
-## Project Structure
-src/
-├── components/
-│ ├── layout/
-│ └── sections/
-├── pages/
-├── styles/
-└── data/
 
 
 ## Purpose
