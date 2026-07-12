@@ -13,8 +13,6 @@ function Layout({ children }) {
         {children}
       </main>
 
-      
-
       <FloatingWhatsapp />
       <BackToTop />
     </>
