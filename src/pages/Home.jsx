@@ -3,7 +3,7 @@ import About from "../components/sections/About";
 import CoffeePortfolio from "../components/sections/CoffeePortfolio";
 import Services from "../components/sections/Services";
 import Process from "../components/sections/Process";
-import WhyChooseUs from "../components/sections/WhyChooseUs";
+import WhychooseUs from "../components/sections/WhyChooseUs";
 import ImageBanner from "../components/sections/ImageBanner";
 import FAQ from "../components/sections/FAQ";
 import Contact from "../components/sections/Contact";
