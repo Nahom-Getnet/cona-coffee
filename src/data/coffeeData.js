@@ -26,7 +26,7 @@ name:"Sidamo",
 Origin:"Sidama",
 process:"Washed",
 notes:"Bright Citrus",
-availability:"Seasonal",
+availability:"Available",
 image:"/Images/Coffee/sidama.jpg"
 },
 
