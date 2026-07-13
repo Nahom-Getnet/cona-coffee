@@ -54,7 +54,7 @@ src="/Images/Logo/logo.png"
 alt="CONA Coffee Logo"
 />
 
-<span>CONA Coffee</span>
+<span>Cona Coffee</span>
 
 </div>
 
