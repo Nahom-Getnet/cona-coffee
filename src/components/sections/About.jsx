@@ -69,19 +69,7 @@ Your Trusted Coffee Sourcing Partner
 
 <p>
 
-Replace this paragraph with your friend's company story.
-
-Explain:
-
-who they are
-
-why they started
-
-their mission
-
-their local exporter network
-
-and why international buyers should work with them.
+Cona Coffee was founded with a simple goal: to make sourcing premium Ethiopian coffee easier, more transparent, and more reliable for international buyers. As a young and dedicated team based in Addis Ababa, we work closely with trusted licensed exporters and coffee-producing regions across Ethiopia. By combining local knowledge with clear communication, we help buyers connect with the right suppliers while ensuring a smooth sourcing experience. Whether you're looking for specialty coffee or commercial volumes, our focus is building long-term partnerships based on trust, quality, and professionalism.
 
 </p>
 
