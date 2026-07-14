@@ -27,8 +27,8 @@ return()=>window.removeEventListener("scroll",handleScroll);
 const links = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
-  { name: "Solutions", href: "#services" },
   { name: "Origins", href: "#coffee" },
+  { name: "Solutions", href: "#services" },
   { name: "FAQ", href: "#faq" },
   { name: "Contact", href: "#contact" }
 ];
