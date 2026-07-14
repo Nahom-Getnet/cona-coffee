@@ -70,7 +70,7 @@ function Services() {
 
     <motion.section
       id="services"
-      className="services" id="about"
+      className="services" 
       initial={{opacity:0,y:60}}
       whileInView={{opacity:1,y:0}}
       transition={{duration:.7}}

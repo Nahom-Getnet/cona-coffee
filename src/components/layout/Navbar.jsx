@@ -24,20 +24,13 @@ return()=>window.removeEventListener("scroll",handleScroll);
 
 },[]);
 
-const links=[
-
-"Home",
-
-"About",
-
-"Solutions",
-
-"Origins",
-
-"FAQ",
-
-"Contact"
-
+const links = [
+  { name: "Home", href: "#home" },
+  { name: "About", href: "#about" },
+  { name: "Solutions", href: "#services" },
+  { name: "Origins", href: "#coffee" },
+  { name: "FAQ", href: "#faq" },
+  { name: "Contact", href: "#contact" }
 ];
 
 return(
@@ -47,32 +40,26 @@ className={`navbar ${scroll?"scrolled":""}`}>
 
 <div className="container nav-wrapper">
 
-<div className="logo">
+<a href="#home" className="logo">
 
 <img
 src="/Images/Logo/logo.png"
 alt="CONA Coffee Logo"
 />
 
-<span>Cona Coffee</span>
-
-</div>
+</a>
 
 <nav className={open?"open":""}>
 
-{links.map(link=>(
+{links.map((link) => (
 
 <a
-
-key={link}
-
-href={`#${link.toLowerCase().replace(/\s/g,"-")}`}
-
-onClick={()=>setOpen(false)}
-
+key={link.name}
+href={link.href}
+onClick={() => setOpen(false)}
 >
 
-{link}
+{link.name}
 
 </a>
 

@@ -37,8 +37,8 @@ color:var(--primary);
 }
 
 .logo img{
-width:52px;
-height:52px;
+width:auto;
+height:65px;
 object-fit:contain;
 
 }
