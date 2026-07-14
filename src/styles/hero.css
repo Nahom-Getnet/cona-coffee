@@ -40,19 +40,26 @@ margin-bottom:45px;
 display:flex;
 gap:20px;
 margin-bottom:60px;
+flex-direction:column;
 }
 
 .hero-image{
 height:720px;
 object-fit:cover;
-border-radius:26px;
 box-shadow:var(--shadow);
+width:100%;
+border-radius:24px;
+overflow:hidden;
+box-shadow:
+0 25px 60px rgba(0,0,0,.18);
+transition:.45s;
 }
 
 .trust-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:20px;
+grid-template-columns:1fr;
 }
 
 .trust-card{
@@ -71,34 +78,10 @@ margin-top:15px;
 grid-template-columns:1fr;
 }
 
-.hero-image{
-
-width:100%;
-
-border-radius:24px;
-
-overflow:hidden;
-
-box-shadow:
-
-0 25px 60px rgba(0,0,0,.18);
-
-transition:.45s;
-
-}
-
 .hero-image:hover{
 
 transform:scale(1.03);
 
-}
-
-.hero-buttons{
-flex-direction:column;
-}
-
-.trust-grid{
-grid-template-columns:1fr;
 }
 
 }

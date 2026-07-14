@@ -10,7 +10,7 @@
 
 :root{
 
---primary:#234232;
+--primary:#683E18;
 --secondary:#8B5E3C;
 --accent:#C59A5C;
 
@@ -236,7 +236,7 @@ color:white;
 
 .btn-primary:hover{
 
-background:#173326;
+background:#503112;
 
 transform:translateY(-4px);
 
