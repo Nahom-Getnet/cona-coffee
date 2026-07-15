@@ -1,85 +1,131 @@
-import {motion} from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronDown } from "lucide-react";
+import "../../App.css";
 
-const steps=[
+const steps = [
+  {
+    title: "Inquiry",
+    description:
+      "Tell us about the coffee you're looking for, including the origin, processing method, quantity, and quality requirements."
+  },
 
-"Inquiry",
+  {
+    title: "Requirement Review",
+    description:
+      "We carefully review your sourcing requirements and determine the most suitable options based on your needs."
+  },
 
-"Requirement Review",
+  {
+    title: "Exporter Matching",
+    description:
+      "Using our trusted local network, we connect you with reliable Ethiopian coffee exporters that best match your requirements."
+  },
 
-"Exporter Matching",
+  {
+    title: "Quotation & Samples",
+    description:
+      "Receive detailed quotations, coffee availability, and product information. If needed, sample shipments can be arranged so you can evaluate the coffee before placing a larger order."
+  },
 
-"Quotation",
+  {
+    title: "Contract",
+    description:
+      "After both parties agree on pricing and terms, the purchase contract is finalized and the order is confirmed."
+  },
 
-"Sample Approval",
-
-"Contract",
-
-"Shipment"
-
+  {
+    title: "Shipment",
+    description:
+      "The exporter prepares and ships your coffee while we assist with communication and coordination throughout the export process."
+  }
 ];
 
-function Process(){
+function Process() {
+  const [open, setOpen] = useState(null);
 
-return(
+  return (
+    <section id="process">
+      <div className="container">
 
-<section id="process">
+        <span className="section-tag">
+          Process
+        </span>
 
-<div className="container">
+        <h2>How It Works</h2>
 
-<span className="section-tag">
+        <div className="timeline">
 
-Process
+          {steps.map((step, index) => (
 
-</span>
+            <motion.div
+              key={index}
+              layout
+              className={`timeline-card ${open === index ? "active" : ""}`}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              whileTap={{ scale: 0.98 }}
+              transition={{
+                layout: {
+                  duration: 0.35,
+                  ease: "easeInOut"
+                }
+              }}
+              
+            >
 
-<h2>
+              <div className="timeline-header" onClick={() =>
+                setOpen(open === index ? null : index)
+              }>
 
-How It Works
+                <div className="timeline-title">
 
-</h2>
+                  <div className="circle">
+                    {index + 1}
+                  </div>
 
-<div className="timeline">
+                  <h3>{step.title}</h3>
 
-{steps.map((step,index)=>(
+                </div>
 
-<motion.div
+                 <ChevronDown
+                 className={`expand-icon ${open === index ? "rotate" : ""}`}
+                  />
 
-key={index}
+              </div>
 
-className="timeline-card"
+              <AnimatePresence>
 
-whileInView={{opacity:1,y:0}}
+                {open === index && (
 
-initial={{opacity:0,y:30}}
+                  <motion.div
+                    layout
+                    initial={{ opacity: 0, y: -8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -8 }}
+                    transition={{ duration: 0.25 }}
+                  >
 
-viewport={{once:true}}
+                    <p className="timeline-description">
+                      {step.description}
+                    </p>
 
->
+                  </motion.div>
 
-<div className="circle">
+                )}
 
-{index+1}
+              </AnimatePresence>
 
-</div>
+            </motion.div>
 
-<h3>
+          ))}
 
-{step}
+        </div>
 
-</h3>
-
-</motion.div>
-
-))}
-
-</div>
-
-</div>
-
-</section>
-
-)
-
+      </div>
+    </section>
+  );
 }
 
 export default Process;

@@ -206,23 +206,14 @@ box-shadow:0 25px 60px rgba(0,0,0,.12);
 ========================================== */
 
 .btn{
-
 display:inline-flex;
-
 align-items:center;
-
 justify-content:center;
-
 padding:17px 38px;
-
 border-radius:999px;
-
 font-weight:600;
-
 font-size:15px;
-
 transition:.35s;
-
 gap: 10px;
 }
 
