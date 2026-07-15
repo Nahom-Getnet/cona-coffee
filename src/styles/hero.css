@@ -50,14 +50,12 @@ overflow:hidden;
 box-shadow:
 0 25px 60px rgba(0,0,0,.18);
 transition:.45s;
-transform: translateY(100px);
 }
 
 .trust-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:20px;
-grid-template-columns:1fr;
 }
 
 .trust-card{
