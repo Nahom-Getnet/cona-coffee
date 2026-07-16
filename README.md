@@ -7,7 +7,7 @@ A modern, responsive coffee sourcing website built for **Cona Coffee**, connecti
 **Live Website:** https://cona-coffee.vercel.app/
 
 ## 📸 Preview
-![Cona Coffee Homepage](assets/preview.png)
+![Cona Coffee Homepage](Asset/preview.png)
 
 ## 📖 About
 
