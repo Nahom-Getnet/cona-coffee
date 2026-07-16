@@ -6,6 +6,9 @@ A modern, responsive coffee sourcing website built for **Cona Coffee**, connecti
 
 **Live Website:** https://cona-coffee.vercel.app/
 
+## 📸 Preview
+![Cona Coffee Homepage](assets/preview.png)
+
 ## 📖 About
 
 Cona Coffee is a professional business website designed for an Ethiopian coffee sourcing agency. It showcases Ethiopian coffee origins, sourcing services, and provides a simple way for international buyers to submit inquiries and connect with trusted exporters.
