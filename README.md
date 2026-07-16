@@ -1,100 +1,74 @@
-# Coffee Agency Website ☕
-
-A professional coffee sourcing website built for an Ethiopian coffee agency that connects international buyers with trusted local exporters.
 # ☕ Cona Coffee
 
-A modern and responsive coffee sourcing website built for Cona Coffee, connecting international coffee buyers with trusted Ethiopian coffee exporters.
+A modern, responsive coffee sourcing website built for **Cona Coffee**, connecting international coffee buyers with trusted Ethiopian coffee exporters.
 
 ## 🌍 Live Demo
 
-https://cona-coffee.vercel.app/
+**Live Website:** https://cona-coffee.vercel.app/
 
-## 📸 Preview
+## 📖 About
+
+Cona Coffee is a professional business website designed for an Ethiopian coffee sourcing agency. It showcases Ethiopian coffee origins, sourcing services, and provides a simple way for international buyers to submit inquiries and connect with trusted exporters.
 
 ## ✨ Features
 
-- Responsive design
+- Responsive design for desktop and mobile
+- Modern coffee-inspired UI
 - Smooth scrolling
-- Animated sections with Framer Motion
-- Coffee portfolio
+- Animated sections using Framer Motion
+- Coffee origins showcase
 - Services section
-- Contact form
+- FAQ section
+- Buyer inquiry/contact form
 - Floating WhatsApp button
 - Back-to-top button
-- Modern UI with coffee-inspired color palette
 
 ## 🛠️ Built With
 
 - React
 - Vite
+- JavaScript
 - CSS3
 - Framer Motion
 - Lucide React
 - React Icons
+- Web3Forms
 
 ## 📁 Project Structure
 
-```
+```text
 src/
- ├── components/
- ├── pages/
- ├── styles/
- ├── App.jsx
- └── main.jsx
+├── components/
+├── pages/
+├── styles/
+├── App.jsx
+└── main.jsx
 ```
 
 ## 🚀 Getting Started
 
-Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/Nahom-Getnet/cona-coffee.git
 ```
 
-Install dependencies
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-Run locally
+### Start the development server
 
 ```bash
 npm run dev
 ```
 
+## 🎯 Purpose
+
+This project was developed as a real-world business website for an Ethiopian coffee sourcing agency, providing a professional online presence and making it easier for international buyers to connect with local coffee exporters.
+
 ## 👨‍💻 Author
 
-Nahom Getnet
-## About The Project
-
-This website helps showcase Ethiopian coffee origins, sourcing services, and provides a communication platform for international buyers interested in coffee export opportunities.
-
-## Built With
-
-- React
-- Vite
-- JavaScript
-- CSS
-- Framer Motion
-- Lucide React
-- Web3forms
-## Features
-
-- Responsive design for desktop and mobile
-- Modern coffee-inspired UI
-- Animated sections and interactions
-- Coffee origin portfolio
-- Services showcase
-- Buyer inquiry/contact section
-- FAQ section
-- Professional business landing page
-
-
-## Purpose
-
-Developed as a real-world business website project for a coffee sourcing agency in Ethiopia.
-
-## Author
-
-Nahom Getnet
+**Nahom Getnet**
