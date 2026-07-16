@@ -84,3 +84,31 @@ margin-bottom:5px;
 margin-top:10px;
 width:fit-content;
 }
+
+.character-counter{
+text-align:right;
+font-size:.85rem;
+margin-top:8px;
+color:var(--text-light);
+transition:.25s;
+}
+
+.character-counter.too-short{
+color:#d97706;
+}
+
+.character-counter.almost-full{
+color:#dc2626;
+}
+
+.privacy-note{
+  margin-top:16px;
+  margin-top:16px;
+  padding-top:12px;
+  border-top:1px solid rgba(0,0,0,.08);
+  font-size:.9rem;
+  color:var(--text-light);
+  line-height:1.6;
+  text-align:center;
+  font-style: italic;
+}
