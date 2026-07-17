@@ -1,54 +1,46 @@
-import { Award, Globe, Users, Shield, HeartHandshake, Coffee } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 
-const items=[
+function WhyChooseUs() {
 
-["Local Expertise",Award],
+const items = [
 
-["Trusted Network",Users],
+"Local Expertise",
 
-["Transparent Communication",Shield],
+"Trusted Network",
 
-["Personalized Service",HeartHandshake],
+"Transparent Communication",
 
-["Global Buyers",Globe],
+"Personalized Service",
 
-["Premium Coffee Access",Coffee]
+"Global Buyers",
+
+"Premium Coffee Access"
 
 ];
 
-function WhyChooseUs(){
+return (
 
-return(
-
-<section>
+<section className="why-section">
 
 <div className="container">
 
 <span className="section-tag">
-
 Why Choose Us
-
 </span>
 
 <h2>
-
 Built Around Trust
-
 </h2>
 
-<div className="services-grid">
+<div className="why-grid">
 
-{items.map(([title,Icon])=>(
+{items.map((item) => (
 
-<div className="card service-card" key={title}>
+<div className="why-item" key={item}>
 
-<div className="service-icon">
+<CheckCircle2 className="why-icon" size={22} />
 
-<Icon size={34}/>
-
-</div>
-
-<h3>{title}</h3>
+<span>{item}</span>
 
 </div>
 
@@ -60,7 +52,7 @@ Built Around Trust
 
 </section>
 
-)
+);
 
 }
 

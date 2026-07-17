@@ -36,34 +36,6 @@ const services = [
 
 ];
 
-const process = [
-
-  {
-    number: "01",
-    title: "Submit Inquiry",
-    text: "Tell us your coffee requirements, destination and preferred specifications."
-  },
-
-  {
-    number: "02",
-    title: "Exporter Matching",
-    text: "We identify licensed Ethiopian exporters that match your sourcing needs."
-  },
-
-  {
-    number: "03",
-    title: "Business Discussion",
-    text: "The buyer and exporter discuss pricing, samples, quality and contract details."
-  },
-
-  {
-    number: "04",
-    title: "Shipment",
-    text: "Once an agreement is reached, the exporter prepares the shipment while we assist with communication."
-  }
-
-];
-
 function Services() {
 
   return (
@@ -141,44 +113,8 @@ function Services() {
           })}
 
         </div>
+        
 
-        <div className="timeline">
-
-          {process.map((step) => (
-
-            <motion.div
-
-              key={step.number}
-
-              className="timeline-card"
-
-              whileHover={{   y: -10, scale: 1.02}}
-
-            >
-
-              <div className="circle">
-
-                {step.number}
-
-              </div>
-
-              <h4>
-
-                {step.title}
-
-              </h4>
-
-              <p>
-
-                {step.text}
-
-              </p>
-
-            </motion.div>
-
-          ))}
-
-        </div>
 
       </div>
 

@@ -145,6 +145,35 @@ transform:rotate(180deg);
 }
 
 /* =========================
+   Why Choose US
+========================= */
+.why-section{
+   padding-bottom:50px;
+}
+
+.why-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px 0px;
+margin-top:50px;
+
+}
+
+.why-item{
+display:flex;
+align-items:center;
+justify-content:flex-start;
+gap:12px;
+font-size:1.05rem;
+font-weight:600;
+}
+
+.why-icon{
+color:var(--accent);
+flex-shrink:0;
+}
+
+/* =========================
    FAQ
 ========================= */
 
